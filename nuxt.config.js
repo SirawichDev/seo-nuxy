@@ -6,6 +6,9 @@ export default {
   meta: {
     ogType: false,
     ogTitle: false,
+    ogImage: false,
+    ogSiteName: false,
+    appleMobileWebAppTitle: false,
     ogDescription: false
    },
 
