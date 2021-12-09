@@ -1,12 +1,14 @@
 import { Plugin, Context } from '@nuxt/types'
 
 const seoInject: Plugin = (_: Context, inject) => {
-  inject('headUtil', (data: any) => ({
+  return inject('headUtil', (data: any) => ({
     htmlAttrs: {
       lang: data.lang
     },
     title: data.title,
     meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',

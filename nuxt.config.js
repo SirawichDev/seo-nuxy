@@ -3,19 +3,13 @@ export default {
   ssr: false,
 
   target: 'static',
+  meta: {
+    ogType: false,
+    ogTitle: false,
+    ogDescription: false
+   },
 
-  head: {
-    title: 'seo-play-ground',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
-  },
+  head: {},
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
